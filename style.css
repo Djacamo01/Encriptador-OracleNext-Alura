@@ -2,23 +2,24 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('mosaico.png');
-    background-repeat: repeat;
+    background-color: #f0f0f0; /* Cambio de color de fondo */
     padding: 20px;
 }
 
 header {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold; /* Cambiado "font-style" a "font-weight" */
+    font-weight: bold;
     color: #ffffff;
-    background-color: #1cc0dd;
+    background: linear-gradient(to bottom, #6295af, #58c1f5); /* Cambio de degradado */
     border-radius: 15px;
     text-align: center;
-    padding: 2px;
-    margin-bottom: 2px;
+    padding: 20px 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+    line-height: 22px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* Agrega estas reglas al final de tu hoja de estilos CSS */
 
 .Contenedor.principal {
     display: flex;
@@ -34,33 +35,33 @@ header {
 #areaTexto,
 #areaTextoEncriptado {
     width: 100%;
+    border-radius: 10px;
+    padding: 15px; /* Aumenta el padding para más espacio */
+    background: linear-gradient(to bottom, #6295af, #58c1f5); /* Cambio de degradado */
+    border: 1px solid #ccc;
+    color: #ffffff; /* Cambio de color de texto */
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    left: 0; /* Asegura que el footer esté alineado a la izquierda */
+    left: 0;
     width: 100%;
-    background-image: url('footeer.jpg');
-    background-size: cover;
+    background-color: #2d2d2d; /* Cambio de color de fondo */
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-.footer-images {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: flex-end;
-    gap: 10px; /* Espacio entre las imágenes */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer-image {
-    width: 40px; /* Ajusta el tamaño según tu preferencia */
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 
-
-
+.oracle-image,
+.alura-image {
+    width: 7%;
+    height: 7%;
+    margin-top: 10px;
+}
