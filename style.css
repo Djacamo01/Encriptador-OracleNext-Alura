@@ -1,70 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 body {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    background: #8ea2eb;
+    margin: 0;
+    padding: 0;
+    background-image: url('mosaico.png');
+    background-repeat: repeat;
+    padding: 20px;
 }
 
 header {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    font-style: bold;
+    font-weight: bold; /* Cambiado "font-style" a "font-weight" */
     color: #ffffff;
-    background-color: #3a3a3a;
-    border-radius: 8px;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.minecraft-box {
-    border: 5px solid #3a3a3a;
-    background-color: #c6c6c6;
-    box-shadow: 2px 2px 0px #000000;
-}
-
-.InputTexto {
-    margin: 10px 0 10px 50px;
-    border-radius: 8px;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-}
-
-.ouputTexto {
-    position: relative;
-    bottom: 0;
-    width: 50%;
-    height: 30%;
-    display: inline-block;
-    text-align: right;
-}
-
-.Boton {
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    padding: 8px;
-    color: #ffffff;
-    background-color: #3a3a3a;
-    border-radius: 12px;
+    background-color: #1cc0dd;
+    border-radius: 15px;
     text-align: center;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+/* Agrega estas reglas al final de tu hoja de estilos CSS */
+
+.Contenedor.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Contenedor.principal > div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#areaTexto,
+#areaTextoEncriptado {
+    width: 100%;
 }
 
 footer {
     position: absolute;
     bottom: 0;
+    left: 0; /* Asegura que el footer esté alineado a la izquierda */
     width: 100%;
-    height: 50px;
-    background-color: #3a3a3a;
+    background-image: url('footeer.jpg');
+    background-size: cover;
+    color: white;
     text-align: center;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    padding: 15px;
-    color: #ffffff;
-    display: block;
-    border-radius: 8px;
-    text-align: center;
+    padding: 10px;
 }
+
+.footer-images {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.footer-image {
+    width: 40px; /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+}
+
+
+

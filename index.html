@@ -3,89 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptado Alura</title>
-    <!-- Enlaza el archivo CSS de Bootstrap usando un CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Agrega tu archivo CSS personalizado después del archivo de Bootstrap -->
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
 </head>
 <body>
+    <header class="Encabezado">
+        <h1>Encriptador/DesEncriptador</h1>
+    </header>    
 
-    <header class="bg-primary text-white text-center py-4">
-        <h1 class="display-4">Encriptador/Desencriptador</h1>
-    </header>
-
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <section class="p-3 bg-light rounded minecraft-box">
-                    <h2 class="h4 mb-3">Escribe un mensaje para encriptar</h2>
-                    <textarea class="form-control" id="areaTexto" rows="8"></textarea>
-                    <div class="d-flex justify-content-between mt-3">
-                        <button class="btn btn-primary" id="botonEncriptar">Encriptar</button>
-                        <button class="btn btn-secondary" id="botonDesencriptar">Desencriptar</button>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-6 mb-4">
-                <section class="p-3 bg-light rounded minecraft-box">
-                    <h2 class="h4 mb-3">Mensaje Encriptado</h2>
-                    <textarea class="form-control" id="areaTextoEncriptado" rows="8" readonly></textarea>
-                    <button class="btn btn-success mt-3" id="botonCopiar">Copiar</button>
-                </section>
+    <main class="Contenedor principal main-container">
+        <div>
+            <h2>Escribe un mensaje para encriptar</h2>
+            <textarea class="form-control" id="areaTexto" rows="8"></textarea>
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-primary" id="botonEncriptar">Encriptar</button>
+                <button class="btn btn-secondary" id="botonDesencriptar">Desencriptar</button>
             </div>
         </div>
+    
+        <div>
+            <h2>Mensaje Oculto</h2>
+            <textarea class="form-control" id="areaTextoEncriptado" rows="8" readonly></textarea>
+            <button class="btn btn-success mt-3" id="botonCopiar">Copiar</button>
+        </div>
     </main>
-
+    
     <footer class="bg-primary text-white text-center py-3">
         <p class="m-0">
             Elaborado por Donald Miguel Jacamo Estrada con fines educativos.
             Gracias a Alura y Oracle.
         </p>
+        <div class="social-icons mt-3">
+            <a href="https://twitter.com/JacamoDonald" target="_blank" class="text-white me-3">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://github.com/Djacamo01" target="_blank" class="text-white me-3">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/donald-miguel-jacamo-estrada-0218551a1/" target="_blank" class="text-white me-3">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/djacamo01/" target="_blank" class="text-white">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+        <div class="footer-images">
+            <img src="oracle.png" alt="Oracle" class="footer-image">
+            <img src="alura.png" alt="Alura" class="footer-image">
+        </div>
     </footer>
+    
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const botonEncriptar = document.getElementById("botonEncriptar");
-            const botonDesencriptar = document.getElementById("botonDesencriptar");
-            const botonCopiar = document.getElementById("botonCopiar");
-            const areaTexto = document.getElementById("areaTexto");
-            const areaTextoEncriptado = document.getElementById("areaTextoEncriptado");
-
-            botonEncriptar.addEventListener("click", function () {
-                const mensaje = areaTexto.value;
-                const mensajeEncriptado = encriptar(mensaje);
-                areaTextoEncriptado.value = mensajeEncriptado;
-            });
-
-            botonDesencriptar.addEventListener("click", function () {
-                const mensajeEncriptado = areaTextoEncriptado.value;
-                const mensaje = desencriptar(mensajeEncriptado);
-                areaTexto.value = mensaje;
-            });
-
-            botonCopiar.addEventListener("click", function () {
-                areaTextoEncriptado.select();
-                document.execCommand("copy");
-            });
-
-            function encriptar(texto) {
-                return texto.replace(/e/g, "enter")
-                            .replace(/i/g, "imes")
-                            .replace(/a/g, "ai")
-                            .replace(/o/g, "ober")
-                            .replace(/u/g, "ufat");
-            }
-
-            function desencriptar(textoEncriptado) {
-                return textoEncriptado.replace(/enter/g, "e")
-                                      .replace(/imes/g, "i")
-                                      .replace(/ai/g, "a")
-                                      .replace(/ober/g, "o")
-                                      .replace(/ufat/g, "u");
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
