@@ -11,7 +11,7 @@ git clone https://github.com/Djacamo01/Encriptador-OracleNext-Alura.git
 cd Encriptador-OracleNext-Alura
 ```
 
-📷 ![Home GitHub](img/Home-github.png)
+📷 ![Home GitHub](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/Home-github.png)
 
 ---
 
@@ -31,7 +31,7 @@ Deberías ver algo como:
 - `README.md`, imágenes (`oracle.png`, `alura.png`, etc.)  
 - Carpeta `css/` si aplica, entre otros recursos
 
-📷 ![Working Tree](img/working-tree.png)
+📷 ![Working Tree](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/working-tree.png)
 
 ---
 
@@ -45,7 +45,7 @@ git init
 
 Luego comprobarás que `.git/` se creó.
 
-📷 ![Git Init](img/init.png)
+📷 ![Git Init](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/init.png)
 
 ---
 
@@ -77,7 +77,7 @@ Untracked files:
     alura.png
 ```
 
-📷 ![Git Status](img/gitstatus.png)
+📷 ![Git Status](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/gitstatus.png)
 
 ---
 
@@ -106,7 +106,7 @@ Crea un commit con mensaje claro:
 git commit -m "feat: configuración inicial del proyecto Encriptador‑OracleNext‑Alura"
 ```
 
-📷 ![Git Commit](img/gitcommit.png)
+📷 ![Git Commit](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/gitcommit.png)
 
 ---
 
@@ -122,7 +122,7 @@ Salida esperada:
 a1b2c3d (HEAD -> main) feat: configuración inicial del proyecto Encriptador‑OracleNext‑Alura
 ```
 
-📷 ![Git Log](img/gitlog.png)
+📷 ![Git Log](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/gitlog.png)
 
 ---
 
@@ -192,11 +192,11 @@ git commit --amend -m "feat: agrega función sanitizeInput() al script"
 
 | Paso | Descripción | Imagen |
 |------|-------------|--------|
-| 1 | Clonación del repo | ![git clone](img/git-clone.png) |
-| 2 | Estado inicial (`git status`) | ![git status](img/git-status.png) |
-| 3 | Adición al staging (`git add .`) | ![git add](img/git-add.png) |
-| 4 | Primer commit (`git commit`) | ![git commit](img/git-commit.png) |
-| 5 | Historial de commits (`git log`) | ![git log](img/git-log.png) |
+| 1 | Clonación del repo | ![git clone](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/git-clone.png) |
+| 2 | Estado inicial (`git status`) | ![git status](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/git-status.png) |
+| 3 | Adición al staging (`git add .`) | ![git add](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/git-add.png) |
+| 4 | Primer commit (`git commit`) | ![git commit](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/git-commit.png) |
+| 5 | Historial de commits (`git log`) | ![git log](https://github.com/Djacamo01/Encriptador-OracleNext-Alura/blob/main/img/git-log.png) |
 
 ---
 
