@@ -11,7 +11,7 @@ git clone https://github.com/Djacamo01/Encriptador-OracleNext-Alura.git
 cd Encriptador-OracleNext-Alura
 ```
 
-📷 *[img/Home-github.png]*
+📷 ![Home GitHub](img/Home-github.png)
 
 ---
 
@@ -31,7 +31,7 @@ Deberías ver algo como:
 - `README.md`, imágenes (`oracle.png`, `alura.png`, etc.)  
 - Carpeta `css/` si aplica, entre otros recursos
 
-📷 *[img/working-tree.png]*
+📷 ![Working Tree](img/working-tree.png)
 
 ---
 
@@ -45,7 +45,7 @@ git init
 
 Luego comprobarás que `.git/` se creó.
 
-📷 *[img/init.png]*
+📷 ![Git Init](img/init.png)
 
 ---
 
@@ -77,7 +77,7 @@ Untracked files:
     alura.png
 ```
 
-📷 *[img/gitstatus.png]*
+📷 ![Git Status](img/gitstatus.png)
 
 ---
 
@@ -106,7 +106,7 @@ Crea un commit con mensaje claro:
 git commit -m "feat: configuración inicial del proyecto Encriptador‑OracleNext‑Alura"
 ```
 
-📷 *[img/gitcommit.png]*
+📷 ![Git Commit](img/gitcommit.png)
 
 ---
 
@@ -122,7 +122,7 @@ Salida esperada:
 a1b2c3d (HEAD -> main) feat: configuración inicial del proyecto Encriptador‑OracleNext‑Alura
 ```
 
-📷 *[img/gitlog.png]*
+📷 ![Git Log](img/gitlog.png)
 
 ---
 
@@ -192,11 +192,11 @@ git commit --amend -m "feat: agrega función sanitizeInput() al script"
 
 | Paso | Descripción | Imagen |
 |------|-------------|--------|
-| 1 | Clonación del repo | ![git clone](docs/img/git-clone.png) |
-| 2 | Estado inicial (`git status`) | ![git status](docs/img/git-status.png) |
-| 3 | Adición al staging (`git add .`) | ![git add](docs/img/git-add.png) |
-| 4 | Primer commit (`git commit`) | ![git commit](docs/img/git-commit.png) |
-| 5 | Historial de commits (`git log`) | ![git log](docs/img/git-log.png) |
+| 1 | Clonación del repo | ![git clone](img/git-clone.png) |
+| 2 | Estado inicial (`git status`) | ![git status](img/git-status.png) |
+| 3 | Adición al staging (`git add .`) | ![git add](img/git-add.png) |
+| 4 | Primer commit (`git commit`) | ![git commit](img/git-commit.png) |
+| 5 | Historial de commits (`git log`) | ![git log](img/git-log.png) |
 
 ---
 
